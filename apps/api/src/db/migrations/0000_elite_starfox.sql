@@ -3,11 +3,13 @@ CREATE TABLE `drivers` (
 	`fname` text NOT NULL,
 	`lname` text NOT NULL,
 	`email` text NOT NULL,
-	`mobile` text NOT NULL,
+	`mobile` integer NOT NULL,
 	`license` text NOT NULL,
 	`license_expiration` integer NOT NULL,
 	`mileage` integer NOT NULL,
-	`image` text
+	`image` text,
+	`created_at` integer,
+	`updated_at` integer
 );
 --> statement-breakpoint
 CREATE UNIQUE INDEX `drivers_email_unique` ON `drivers` (`email`);--> statement-breakpoint

@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "7f837151-10ed-40a6-9fd3-dd30f9de3ac4",
+  "id": "cc276a10-f04f-414b-a9e0-eac45c6673c2",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "drivers": {
@@ -37,7 +37,7 @@
         },
         "mobile": {
           "name": "mobile",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -66,6 +66,20 @@
         "image": {
           "name": "image",
           "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false

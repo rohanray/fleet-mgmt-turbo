@@ -5,7 +5,7 @@
     "jsxImportSource": "hono/jsx",
     "baseUrl": "./",
     "paths": {
-      "@/api/*": [
+      "@fleet-app/api/*": [
         "./src/*"
       ]
     },

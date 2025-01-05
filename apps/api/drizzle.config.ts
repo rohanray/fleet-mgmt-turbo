@@ -1,10 +1,14 @@
+import { config } from 'dotenv';
 import { defineConfig } from "drizzle-kit";
+config({ path: '.env.local' }); // or .env.local
 
-// only used to create migrations
-// we use wrangler to apply migrations (see package.json)
 export default defineConfig({
-  out: "./db/migrations",
-  schema: "./db/schema/index.ts",
+  out: "./src/db/migrations",
+  schema: "./src/db/schema/index.ts",
   dialect: "turso",
-  casing: "snake_case"
+  casing: "snake_case",
+  dbCredentials: {
+    url: process.env.DATABASE_URL || "",
+    authToken: process.env.DATABASE_AUTH_TOKEN || "asd",
+  },
 });
