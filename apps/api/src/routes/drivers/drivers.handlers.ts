@@ -9,6 +9,7 @@ import { drivers } from "@fleet-app/api/db/schema";
 import { ZOD_ERROR_CODES, ZOD_ERROR_MESSAGES } from "@fleet-app/api/lib/constants";
 
 import type { CreateRoute, GetOneRoute, ListRoute } from "./drivers.routes";
+import { pinoLogger } from "@fleet-app/api/middlewares/pino-logger";
 
 export const list: AppRouteHandler<ListRoute> = async (c) => {
     const drivers = await db.query.drivers.findMany({
@@ -21,8 +22,8 @@ export const list: AppRouteHandler<ListRoute> = async (c) => {
 };
 
 export const create: AppRouteHandler<CreateRoute> = async (c) => {
+    console.warn(c.var.logger.info(c.req, "drivers post body"));
     const driver = c.req.valid("json");
-    console.warn(driver);
 
     const [inserted] = await db.insert(drivers).values(driver).returning();
     return c.json(inserted, HttpStatusCodes.OK);

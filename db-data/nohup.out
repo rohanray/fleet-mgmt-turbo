@@ -65,3 +65,7 @@ config:
 2025-01-05T21:37:53.036246Z ERROR timings_middleware{req_id=cfea8e68-0d65-45d6-9ba9-1ecc3b8bf022}: libsql_server::hrana::http: hrana server: Stream handle for 4264823703934847503 was not found
 2025-01-05T21:38:16.073247Z ERROR timings_middleware{req_id=91d8b296-6b7a-41e9-bb48-70468b6db1bf}: libsql_server::hrana::http: hrana server: Stream handle for 2010822523561366123 is expired
 2025-01-05T21:38:28.984719Z ERROR timings_middleware{req_id=ea54eba9-0611-4898-8e33-3127b5ac9647}: libsql_server::hrana::http: hrana server: Stream handle for 13914602242347407792 is expired
+2025-01-05T21:41:17.137370Z ERROR timings_middleware{req_id=be5ad1b5-cde0-4c09-a411-ceb02526f225}: libsql_server::hrana::http: hrana server: Stream handle for 8610465700260142378 is expired
+2025-01-07T05:31:02.042592Z ERROR timings_middleware{req_id=4c220ea9-9f0c-44b9-9883-54eca0679118}: sqlite3Parser: near ID, "Token(Some("drivers"))": syntax error    
+2025-01-07T05:31:02.042441Z ERROR timings_middleware{req_id=6357e623-db57-4479-b054-bed2d42669e1}: libsql_server::hrana::http: hrana server: Stream handle for 4812131601395225469 is expired
+2025-01-07T05:31:45.775850Z ERROR timings_middleware{req_id=1800b86d-8b75-46ec-b4b2-36964602dc9c}: libsql_server::hrana::http: hrana server: Stream handle for 9540128686885425315 is expired

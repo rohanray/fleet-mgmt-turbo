@@ -16,6 +16,7 @@ export const drivers = sqliteTable(
     mobile: integer().unique().notNull(),
     license: text().unique().notNull(),
     license_expiration: integer({ mode: "timestamp" }).notNull(),
+    // license_expiration: z.date(),
     mileage: integer().notNull(),
     image: text(),
     createdAt: integer("created_at", { mode: "timestamp" })
@@ -34,7 +35,7 @@ export const insertDriversSchema = createInsertSchema(
   drivers,
   {
     mobile: z.number().min(1000000000).max(9999999999),
-    // license_expiration: z.date(),
+    license_expiration: z.coerce.date(),
   }
 ).required({
   email: true,
