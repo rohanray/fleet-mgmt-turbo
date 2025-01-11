@@ -16,7 +16,6 @@ export const drivers = sqliteTable(
     mobile: integer().unique().notNull(),
     license: text().unique().notNull(),
     license_expiration: integer({ mode: "timestamp" }).notNull(),
-    // license_expiration: z.date(),
     mileage: integer().notNull(),
     image: text(),
     createdAt: integer("created_at", { mode: "timestamp" })
