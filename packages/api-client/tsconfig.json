@@ -8,16 +8,14 @@
         ],
         "rootDir": "src",
         "paths": {
-            "@/api/*": [
+            "@fleet-app/api/*": [
                 "../../apps/api/src/*"
             ]
         },
         "typeRoots": [
-            "./node_modules/@types",
-            "./node_modules/@cloudflare"
+            "./node_modules/@types"
         ],
         "types": [
-            "workers-types/2023-07-01",
             "node"
         ],
         "declaration": true,

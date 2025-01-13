@@ -71,3 +71,5 @@ config:
 2025-01-07T05:31:45.775850Z ERROR timings_middleware{req_id=1800b86d-8b75-46ec-b4b2-36964602dc9c}: libsql_server::hrana::http: hrana server: Stream handle for 9540128686885425315 is expired
 2025-01-10T06:27:06.351155Z  INFO timings_middleware{req_id=e6d0af55-f2a2-4aee-a9f5-dfaa0e2138b2}: libsql_server::namespace::store: namespace `default` deallocated
 2025-01-10T06:27:06.368181Z  INFO timings_middleware{req_id=e6d0af55-f2a2-4aee-a9f5-dfaa0e2138b2}:try_new_primary:make_primary_connection_maker: libsql_server::replication::primary::logger: SQLite autocheckpoint: 1000
+2025-01-12T07:39:53.966521Z  INFO timings_middleware{req_id=244513a0-77a5-4041-b136-b5ddabf74983}: libsql_server::namespace::store: namespace `default` deallocated
+2025-01-12T07:39:53.984943Z  INFO timings_middleware{req_id=244513a0-77a5-4041-b136-b5ddabf74983}:try_new_primary:make_primary_connection_maker: libsql_server::replication::primary::logger: SQLite autocheckpoint: 1000
